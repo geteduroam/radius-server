@@ -1,0 +1,3 @@
+raddb/certs/*
+!raddb/certs/.gitkeep
+!raddb/certs/dh
