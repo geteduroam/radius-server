@@ -7,6 +7,11 @@ stat -l \
 	raddb/certs/server.key \
 	raddb/certs/server.pem >/dev/null \
 		|| { echo "==> Add key material to raddb/certs before running $0" >&2 ; false; }
+stat -l \
+	radsecproxy/certs/ca.pem \
+	radsecproxy/certs/server.key \
+	radsecproxy/certs/server.pem >/dev/null \
+		|| { echo "==> Add key material to radsecproxy/certs before running $0" >&2 ; false; }
 
 if [ -d /usr/local/etc/raddb -o -f /usr/local/etc/radsecproxy.conf ]
 then
