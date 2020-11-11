@@ -1,3 +1,6 @@
 raddb/certs/*
 !raddb/certs/.gitkeep
 !raddb/certs/dh
+
+radsecproxy/certs/*
+!radsecproxy/certs/.gitkeep
